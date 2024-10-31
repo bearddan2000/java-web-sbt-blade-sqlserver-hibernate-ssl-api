@@ -1,4 +1,4 @@
-# java-cli-maven-mysql-hibernate-simple
+# java-web-sbt-blade-mysql-hibernate-simple
 
 ## Description
 Creates a small database table
@@ -7,18 +7,19 @@ hql.
 
 ## Tech stack
 - java
-- maven
+- sbt
   - hibernate
   - hql
-  - log4j
+  - blade
   - mysql driver
 
 ## Docker stack
-- maven:3-openjdk-17
+- hseeberger/scala-sbt:11.0.2-oraclelinux7_1.3.5_2.12.10
 - mariadb:latest
 
 ## To run
 `sudo ./install.sh -u`
+[Available here](localhost)
 
 ## To stop
 `sudo ./install.sh -d`
