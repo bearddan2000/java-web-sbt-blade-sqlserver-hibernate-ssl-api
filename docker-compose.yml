@@ -10,14 +10,12 @@ services:
         restart: true
 
   db:
-    image: mariadb:latest
+    image: postgres:alpine
     ports:
-      - 3306
+      - 5432
     healthcheck:
       test: "pwd"
-    volumes:
-      - ./db/sql:/docker-entrypoint-initdb.d
     environment:
-      - MYSQL_ALLOW_EMPTY_PASSWORD=true
-      - MYSQL_USER=maria
-      - MYSQL_PASSWORD=pass
+      - POSTGRES_DB=animal
+      - POSTGRES_USER=maria
+      - POSTGRES_HOST_AUTH_METHOD=trust
