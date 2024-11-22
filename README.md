@@ -1,8 +1,8 @@
-# java-web-sbt-blade-postgres-hibernate-simple
+# java-web-sbt-blade-sqlserver-hibernate-ssl-api
 
 ## Description
 Creates a small database table
-called `dog` and populates with
+called `dog` a Provides end-to-end self signed ssl certs.nd populates with
 hql.
 
 ## Tech stack
@@ -11,11 +11,13 @@ hql.
   - hibernate
   - hql
   - blade
-  - postgres driver
+  - mssql driver
 
 ## Docker stack
+- alpine:edge
 - hseeberger/scala-sbt:11.0.2-oraclelinux7_1.3.5_2.12.10
-- postgres:alpine
+- mcr.microsoft.com/mssql/server:2017-latest-ubuntu
+- traefik:v2.4
 
 ## To run
 `sudo ./install.sh -u`

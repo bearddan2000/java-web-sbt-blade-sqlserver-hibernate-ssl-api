@@ -4,12 +4,11 @@
 "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
   <session-factory>
-    <property name="connection.driver_class">org.postgresql.Driver</property>
-    <!-- property name="connection.driver_class">com.mysql.jdbc.Driver</property -->
-    <property name="connection.url">jdbc:postgresql://db/animal?user=maria&#38;password=pass</property>
-    <property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
-    <property name="connection.username">maria</property>
-    <property name="connection.password">pass</property>
+      <property name="connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+      <property name="connection.url">jdbc:sqlserver://db:1433;databaseName=master;username=sa;password=z!oBx1ab;</property>    
+      <property name="dialect">org.hibernate.dialect.SQLServerDialect</property>    
+      <property name="connection.username">sa</property>    
+      <property name="connection.password">z!oBx1ab</property>
     <property name="connection.pool_size">3</property>
     <!--property name="dialect">org.hibernate.dialect.MySQLDialect</property-->
     <property name="current_session_context_class">thread</property>

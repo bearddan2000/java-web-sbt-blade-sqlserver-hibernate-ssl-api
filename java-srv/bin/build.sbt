@@ -19,7 +19,7 @@ lazy val root = (project in file("."))
 
   libraryDependencies ++= Seq(
     
-"org.postgresql" % "postgresql" % "42.2.18.jre7",
+"com.microsoft.sqlserver" % "mssql-jdbc" % "8.4.1.jre11",
     "com.google.code.gson" % "gson" % "2.9.0",
     "org.hibernate" % "hibernate-core" % "5.3.7.Final",
     "javax.persistence" % "javax.persistence-api" % "2.2",
